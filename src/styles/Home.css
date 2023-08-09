@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Overpass:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Homepage{
+    
+    
+    padding: 3%;
+    width: 100%;
+    color: #574AE2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000000;
+    
+    
+    
+    
+    
+}
+#Head_name span{
+    
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+    background: #574AE2;
+background: linear-gradient(to right, #574AE2 10%, #FFD700 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+#Head_name{
+    
+    font-size: 55px;
+    font-family: 'Overpass' , sans-serif;
+    width: fit-content;
+}
+#Head_content{
+    font-size: 45px;
+    font-family: 'Overpass' , sans-serif;
+    width: 50%;
+    margin-bottom: 2%;
+    
+    
+}
+.Socials{
+    
+    width: 50%;
+    
+    
+}
+.Socials_list{
+    
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+
+    
+}
+.Socials_Links{
+    
+    cursor: pointer;
+    transition: 0.7s;
+    font-size: 30px;
+}
+.Socials_Links a{
+    text-decoration: none;
+    color:aliceblue  ;
+    
+}
+.Socials_Links a:hover{
+    color: #574AE2;
+}
+
+
+button {
+    background-color: transparent;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    font-weight: 600;
+    cursor: pointer;
+    color: #574AE2;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+    cursor: pointer;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #574AE2;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #574AE2;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+    
+   }
+   
+   .Socials_Links button:hover a {
+    color: white;
+    transition: 0.3s;
+   }
+   
+   .Socials_Links button a {
+    color: #574AE2;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+   }
+   @media screen and (max-width: 768px) {
+    
+    #Head_name span{
+        font-size: 60px;
+    }
+
+    #Head_name{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    #Head_content{
+        font-size: 30px;
+        width: fit-content;
+    }
+
+    .Socials_Links{
+        font-size: 20px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+    }
+}

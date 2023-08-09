@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:wght@600&display=swap');
+
+.navbar{
+    
+font-family: 'Inter', sans-serif;
+    background: #000000;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    
+
+
+
+}
+.navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.4%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.navbar a:hover {
+    
+    color: #574AE2;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .navbar a{display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}

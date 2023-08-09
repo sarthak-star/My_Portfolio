@@ -1,0 +1,62 @@
+.Projectitem{
+    
+    display: flex;
+    width: 90%;
+    padding: 1%;
+    gap: 10px;
+}
+.Project_vid{
+    width: 100%; 
+    height: auto;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content:center ;
+
+}
+
+.Project_desc{
+    
+    font-size: 25px;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Project_desc button a{
+    text-decoration: none;
+    color: #574AE2;
+    transition: all 0.3s;
+}
+.Project_desc button:hover a{
+    color: aliceblue;
+}
+
+
+/* Media Queries for responsiveness */
+
+/* Adjust the width and flex-direction for smaller screens */
+@media screen and (max-width: 1000px) {
+    .Projectitem {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .Project_desc{
+        font-size: 20px;
+    }
+    
+
+   
+}
+
+
+@media screen and (max-width: 768px){
+    .Project_vid video{
+        width: 100%; 
+    height: auto;
+    margin: 0 auto;
+    }
+}
