@@ -1,9 +1,11 @@
 #Projects{
-    background: #000;
+    background: #0f1113;
     color: aliceblue;
     overflow-x: hidden;
+    
 }
 .Projects_head{
+    margin-top: 7%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -55,7 +57,7 @@
     }
 
     .Projects_Intro p {
-        font-size: 20px;
+        font-size: 14px;
     }
     
 }

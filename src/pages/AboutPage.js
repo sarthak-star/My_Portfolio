@@ -16,15 +16,19 @@ const Aboutpage = () => {
   return (
     
       
-        <motion.div initial={{ opacity: 0 }}
-    animate={{color:'white', opacity: 1 }}
-    transition={{ duration: 1 }} id='About' >
+        <div id='About' >
+      <motion.div initial={{ opacity: 0 ,y : 40 }}
+    animate={{color:'white', opacity: 1,y:0  }}
+    transition={{ duration: 1.5 }}>
+
+    
       <div className="About_head">
         <p>About Me</p>
       </div>
       <div className="About_intro">
         <p>Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</p>
       </div>
+      </motion.div>
       <div className="About_content">
         <div className="About_content_left">
           <h1>Get to know me!</h1>
@@ -47,7 +51,7 @@ const Aboutpage = () => {
         
 
       </div>
-      </motion.div>
+      </div>
     
 
     

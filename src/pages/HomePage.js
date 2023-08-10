@@ -9,10 +9,10 @@ import { BsLinkedin } from "react-icons/bs";
 const Homepage = () => {
   return (
     
-      <motion.div initial={{ opacity: 0 }}
-    animate={{color:'white', opacity: 1 }}
-    transition={{ duration: 1 }} id='Homepage' >
-      
+      <div id='Homepage' >
+        <motion.div initial={{ opacity: 0 ,x : 40 }}
+    animate={{color:'white', opacity: 1,x:0  }}
+    transition={{ duration: 1.5 }}>
         <div id='Head_name' >Hi, I'm <span>Sarthak</span></div>
         <div id='Head_content' >I am a MERN stack developer and a Machine Learning Enthusiast</div>
         <div className="Socials">
@@ -23,8 +23,9 @@ const Homepage = () => {
           </ul>
         
       </div>
-
       </motion.div>
+
+      </div>
 
       
     
