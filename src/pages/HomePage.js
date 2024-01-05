@@ -19,7 +19,7 @@ const Homepage = () => {
           <ul className="Socials_list">
             <li className="Socials_Links"><a href="https://github.com/sarthak-star"><FiGithub /></a></li>
             <li className="Socials_Links"><a href="https://www.linkedin.com/in/sarthak-bathla-44494b202/"><BsLinkedin /></a></li>
-            <li className="Socials_Links"><button><a href="https://drive.google.com/file/d/1zdhhPFtO1SD-pDZVKf-W2mBecbBs5zah/view?usp=drive_link">My Resume</a></button></li>
+            <li className="Socials_Links"><button><a href="https://drive.google.com/file/d/17pewpdY9qBD5R9ZLSkZITZzo5sDogW7P/view?usp=drive_link">My Resume</a></button></li>
           </ul>
         
       </div>
